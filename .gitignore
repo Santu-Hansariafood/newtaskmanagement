@@ -1,0 +1,7 @@
+node_modules
+
+# install the dependencies
+# npm install or try npm install -force to install all the dependency
+# try this command to run the development server npm start
+#select http://localhost:3000 to run the application in the browser
+

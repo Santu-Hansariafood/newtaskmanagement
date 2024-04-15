@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.task-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.task-list h1 {
+    margin-bottom: 10px;
+}
+
+.task-list ul {
+    list-style-type: none;
+}
+
+.task-list li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.task-list li:last-child {
+    border-bottom: none;
+}
+
+.task-list .task-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.task-list .task-description {
+    color: #666;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.task-list .task-status {
+    color: #00a;
+    display: block;
+}
+
+.upload-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.upload-form h2 {
+    margin-bottom: 10px;
+}
+
+.upload-form input[type="file"],
+.upload-form input[type="text"],
+.upload-form textarea,
+.upload-form select {
+    margin-bottom: 10px;
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.upload-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-form button:hover {
+    background-color: #0056b3;
+}
+
+.add-task-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.add-task-form h2 {
+    margin-bottom: 10px;
+}
+
+.add-task-form input[type="text"],
+.add-task-form textarea,
+.add-task-form select {
+    margin-bottom: 10px;
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-task-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-task-form button:hover {
+    background-color: #0056b3;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 300px;
+    }
+}

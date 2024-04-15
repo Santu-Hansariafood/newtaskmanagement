@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="task-list">
+            <h1>Task List</h1>
+            <ul id="task-list">
+                
+            </ul>
+        </div>
+
+        <div class="upload-form">
+            <h2>Upload Excel File</h2>
+            <form id="excel-upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="excelFile" id="excel-file-input">
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+
+        <div class="add-task-form">
+            <h2>Add Task</h2>
+            <form id="add-task-form">
+                <input type="text" id="task-title" placeholder="Title" required>
+                <textarea id="task-description" placeholder="Description" required></textarea>
+                <select id="task-status" required>
+                    <option value="To Do">To Do</option>
+                    <option value="In Progress">In Progress</option>
+                    <option value="Done">Done</option>
+                </select>
+                <input type="text" id="pdf-path" placeholder="PDF File Path">
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+
+</html>
